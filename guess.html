@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Word</title>
+  <link rel="stylesheet" href="guess.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      Number guessing game
+    </h1>
+    <div class="game">
+      <h2></h2>
+      <div class="overlay"></div>
+      <form action="#guess.html">
+        <input type="text" maxlength="1" name="num" id="number">
+        <input class="btn" type="button" value="Submit guess" onclick="guessNum()">
+      </form>
+      <p>Guess Remaining <span>3</span></p>
+    </div>
+  </div>
+  <script src="guess.js"></script>
+</body>
+
+</html>

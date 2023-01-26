@@ -1,0 +1,100 @@
+* {
+  padding: 0ch;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  margin-top: 200px
+}
+
+h1 {
+  color: darkorchid;
+}
+
+.game {
+  width: 40vw;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 7px;
+  box-shadow: 0px 5px 12px 0px #dcdeec
+}
+
+.game .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgb(250 249 246 / 54%);
+  display: none
+}
+
+.game h2 {
+  background-color: white;;
+  color: darkorchid;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  padding-top: 10px;
+  ;
+  padding-bottom: 10px;
+}
+
+.game input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #dcdeec;
+  outline: none;
+  background-color: transparent;
+}
+/* input::placeholder{
+  background-color: white;
+} */
+.game input:focus {
+  border: 2px solid darkorchid;
+  background-color: transparent;
+}
+
+.game input[type="button"] {
+  display: block;
+  margin: auto;
+  color: white;
+  padding: 9px 37px;
+  background-color: darkorchid;
+  border-radius: 21px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-color: transparent;
+}
+
+.game .btn.disable {
+  pointer-events: none;
+}
+
+.game form {
+  margin-top: 73px;
+  margin-bottom: 56px;
+}
+
+.game p {
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  color: darkorchid
+}
+
+.game p span {
+  border: 1px solid rgb(214, 172, 235);
+  color: darkorchid;
+  font-weight: bold;
+  padding: 3px 8px
+}
+
+@media screen and (max-width:800px) {
+  .game {
+    width: 80vw !important;
+    ;
+  }
+}
